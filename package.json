@@ -6,6 +6,7 @@
     "@babel/cli": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "ajv": "^6.5.4",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.4",
     "react": "^16.5.2",
@@ -29,6 +30,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@babel/node": "^7.0.0"
+    "@babel/node": "^7.0.0",
+    "eslint": "^5.7.0"
   }
 }
