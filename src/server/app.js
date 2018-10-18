@@ -1,14 +1,21 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import * as db from './utils/DataBaseUtils';
+import { serverPort } from '../configs.json';
 
 const app = express();
-const port = 8080;
 
 app.use(bodyParser.json());
+db.setUpConnections();
+
+app.get('/', (req, res) => {
+    res.send('Welcome to notes-app!');
+});
 
 app.get('/notes', (req, res) => {
-    db.listNotes().then(data => res.send(data));
+    db.listNotes().then(data => {
+        res.send(data);
+    });
 });
 
 app.post('/notes', (req, res) => {
@@ -20,4 +27,6 @@ app.delete('/notes:id', (req, res) => {
 });
 
 // run server:
-app.listen(port, () => {});
+app.listen(serverPort, () => {
+    // console.log(`Server is running on port ${serverPort}`);
+});
