@@ -3,10 +3,10 @@ import bodyParser from 'body-parser';
 import * as db from './utils/DataBaseUtils';
 import { serverPort } from '../configs.json';
 
+db.setUpConnections();
 const app = express();
 
 app.use(bodyParser.json());
-db.setUpConnections();
 
 app.get('/', (req, res) => {
     res.send('Welcome to notes-app!');

@@ -9,6 +9,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.4",
+    "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5"
@@ -30,7 +31,6 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@babel/node": "^7.0.0",
-    "eslint": "^5.7.0"
+    "@babel/node": "^7.0.0"
   }
 }
