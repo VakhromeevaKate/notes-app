@@ -5,9 +5,8 @@ import configs from '../../configs.json';
 const Note = mongoose.model('Note');
 
 export function setUpConnections() {
-    mongoose.connect(`mongodb://${configs.db.host}:${configs.db.port}/${configs.db.name}`);
+    mongoose.connect(`mongodb://${configs.db.host}:${configs.db.port}/${configs.db.name}`, { useNewUrlParser: true });
     // (`mongodb://localhost/notes`);
-    // console.log(`mongodb://${configs.db.host}:${configs.db.port}/${configs.db.name}`);
 }
 
 export function listNotes() {
