@@ -12,7 +12,9 @@ export default class App extends React.PureComponent {
 
     render() {
         return (
-            <div></div>
+            <div>
+                <h2>Notes App</h2>
+            </div>
         );
     }
 }
