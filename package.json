@@ -31,6 +31,10 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@babel/node": "^7.0.0"
+    "@babel/node": "^7.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "flow": "^0.2.3",
+    "react-test-renderer": "^16.6.0"
   }
 }
